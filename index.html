@@ -133,37 +133,16 @@
             <p>Have an idea brewing, a platform that needs to scale, or a team that could use a steady hand? I’m always happy to connect.</p>
 <p>Lately I’ve been prototyping small developer tools that make everyday workflows faster—little utilities that remove friction instead of adding features.</p>
           </header>
-          <div class="contact-grid">
-            <div id="contact-form" class="contact-form" role="form" aria-labelledby="contact-heading">
-              <p class="contact-blurb">I keep my inbox close. Fill in the note below and your mail app will open with everything pre-filled—feel free to tweak before sending.</p>
-              <div class="field">
-                <label for="contact-name">Name</label>
-                <input id="contact-name" name="name" type="text" autocomplete="name" placeholder="Your name">
-              </div>
-              <div class="field">
-                <label for="contact-email">Email</label>
-                <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="you@example.com">
-              </div>
-              <div class="field">
-                <label for="contact-message">Message</label>
-                <textarea id="contact-message" name="message" rows="4" placeholder="What should we jam on?" required></textarea>
-              </div>
-              <div class="contact-actions">
-                <a id="contact-mail" class="contact-mail" href="mailto:nbrempel@gmail.com?subject=Let%27s%20connect&amp;body=Hi%20Nick%2C%0A%0AI%27d%20love%20to%20chat%20about...">Open mail app</a>
-                <p class="contact-hint">Opens your default email client with the note pre-filled.</p>
-              </div>
-            </div>
-            <div class="contact-links">
-              <h3>Elsewhere</h3>
-              <ul>
-                <li><a href="mailto:nbrempel@gmail.com">Email</a></li>
-                <li><a href="https://github.com/nrempel">GitHub</a></li>
-                <li><a href="https://x.com/nbrempel" aria-label="X (formerly Twitter)">𝕏</a></li>
-                <li><a href="https://linkedin.com/in/nbrempel">LinkedIn</a></li>
-                <li><a href="https://bsky.app/profile/nrempel.com">Bluesky</a></li>
-                <li><a href="https://www.threads.com/@bigremp">Threads</a></li>
-              </ul>
-            </div>
+          <div class="contact-links">
+            <h3>Elsewhere</h3>
+            <ul>
+              <li><a href="mailto:nbrempel@gmail.com">Email</a></li>
+              <li><a href="https://github.com/nrempel">GitHub</a></li>
+              <li><a href="https://x.com/nbrempel" aria-label="X (formerly Twitter)">𝕏</a></li>
+              <li><a href="https://linkedin.com/in/nbrempel">LinkedIn</a></li>
+              <li><a href="https://bsky.app/profile/nrempel.com">Bluesky</a></li>
+              <li><a href="https://www.threads.com/@bigremp">Threads</a></li>
+            </ul>
           </div>
         </div>
       </section>
@@ -174,59 +153,5 @@
         <p class="footer-note">&copy; 2025 Nicholas Rempel. Built with <a href="https://github.com/nrempel/tiny">Tiny</a> and deployed on <a href="https://www.cloudflare.com">Cloudflare</a>.</p>
       </div>
     </footer>
-    <script>
-      (() => {
-        const form = document.getElementById('contact-form');
-        const link = document.getElementById('contact-mail');
-        if (!form || !link) return;
-
-        const inputs = {
-          name: form.querySelector('[name="name"]'),
-          email: form.querySelector('[name="email"]'),
-          message: form.querySelector('[name="message"]')
-        };
-
-        const buildMailto = () => {
-          const name = (inputs.name?.value || '').trim();
-          const email = (inputs.email?.value || '').trim();
-          const message = (inputs.message?.value || '').trim();
-
-          const subjectBase = "Let's connect";
-          const subject = name ? `${subjectBase} — ${name}` : subjectBase;
-
-          const lines = [
-            "Hi Nick,",
-            "",
-            message || "I'd love to connect about…",
-            "",
-            name ? `Name: ${name}` : null,
-            email ? `Email: ${email}` : null
-          ].filter(Boolean);
-
-          const body = lines.join('\n');
-          const params = new URLSearchParams({
-            subject,
-            body
-          });
-
-          return `mailto:nbrempel@gmail.com?${params.toString()}`;
-        };
-
-        const update = () => {
-          link.href = buildMailto();
-        };
-
-        const attach = (el) => {
-          if (!el) return;
-          el.addEventListener('input', update);
-          el.addEventListener('change', update);
-          el.addEventListener('blur', update);
-        };
-
-        Object.values(inputs).forEach(attach);
-        link.addEventListener('click', update);
-        update();
-      })();
-    </script>
   </body>
 </html>
