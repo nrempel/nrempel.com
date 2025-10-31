@@ -154,18 +154,16 @@ a:focus-visible {
 }
 
 .contact-text {
+  display: grid;
+  gap: 1.2rem;
   color: var(--text-soft);
-  max-width: 60ch;
+  max-width: 70ch;
   margin-bottom: 2.4rem;
 }
 
 .contact-text p {
-  margin: 0 0 1.2rem;
+  margin: 0;
   color: inherit;
-}
-
-.contact-text p:last-child {
-  margin-bottom: 0;
 }
 
 
