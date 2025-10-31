@@ -26,10 +26,13 @@ Outside work you’ll usually find me hanging out with my five-year-old son, tin
 Recent chapters
 
 ## story-milestones
-- **Now - Shopify:** Senior engineer shaping resilient commerce infrastructure for merchants.
+- **Shopify (current):** Senior engineer shaping resilient commerce infrastructure for merchants.
 - **Strobe:** Led the engineering team that launched the creator collaboration platform called Strobe.
 - **BC Corporate Registry:** Shipped the province’s first verifiable credentials launch so filings could be trusted end to end.
 - **Servmetrics:** Co-founded the platform and built the live sentiment pipeline that surfaced customer feedback in real time.
+
+## story-footnote
+current role
 
 ## focus-title
 What keeps me curious
