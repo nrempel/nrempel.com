@@ -8,23 +8,45 @@ CMARK_BIN=${CMARK:-cmark}
 command -v "$CMARK_BIN" >/dev/null 2>&1 || { echo "tiny: cmark not found" >&2; exit 1; }
 
 ROOT="$(cd "$(dirname "$0")" && pwd)"
-CONTENT="$ROOT/content.md"
-TEMPLATE="$ROOT/template.html"
-OUTPUT="$ROOT/index.html"
+U="usage: $0 [template [output [content]]]"
+[ "$#" -le 3 ] || { echo "$U" >&2; exit 1; }
+case ${1:-} in -h|--help) echo "$U" >&2; exit 0;; esac
+
+abs(){ case "$1" in /*) printf '%s' "$1";; *) printf '%s' "$ROOT/$1";; esac; }
+TEMPLATE=$(abs "${1:-template.html}")
+OUTPUT=$(abs "${2:-index.html}")
+CONTENT=$(abs "${3:-content.md}")
+
+[ -f "$TEMPLATE" ] || { echo "tiny: template '$TEMPLATE' not found" >&2; exit 1; }
+[ -f "$CONTENT" ] || { echo "tiny: content '$CONTENT' not found" >&2; exit 1; }
 
 TMP=$(mktemp -d)
 trap 'rm -rf "$TMP"' EXIT
 
-awk -v dir="$TMP" 'BEGIN{section=""}/^## /{section=substr($0,4);gsub(/\r/,"",section);section=tolower(section);gsub(/[[:space:]]+/,"-",section);gsub(/[^a-z0-9-]/,"",section);if(section!=""){close(path);path=dir"/"section".md"};next}section!=""{print>path}' "$CONTENT"
-
-slugify(){ printf '%s' "$1" | tr '[:upper:]' '[:lower:]' | sed -E 's/[^a-z0-9]+/-/g;s/^-|-$//g'; }
-render(){ "$CMARK_BIN" "$TMP/$1.md"; }
-lede(){
-  render "$1" | awk 'BEGIN{done=0} {
-    if(!done && sub("<p>","<p class=\"section-lede\">")) { done=1; }
-    print
-  }'
+awk -v dir="$TMP" '
+BEGIN{section=""}
+/^## /{
+	section=substr($0,4)
+	gsub(/\r/,"",section)
+	slug=tolower(section)
+	gsub(/[^a-z0-9]+/,"-",slug)
+	gsub(/^-+/,"",slug)
+	gsub(/-+$/,"",slug)
+	if(slug!=""){
+		close(path)
+		path=dir"/"slug".md"
+		section=slug
+	}else{
+		section=""
+	}
+	next
 }
+section!=""{print>path}
+' "$CONTENT"
+
+slugify(){ printf '%s' "$1" | tr '[:upper:]' '[:lower:]' | sed -E 's/[^a-z0-9]+/-/g; s/^-+|-+$//g'; }
+render(){ "$CMARK_BIN" "$TMP/$1.md"; }
+lede(){ render "$1" | sed '0,/<p>/s//<p class="section-lede">/'; }
 plain(){ "$CMARK_BIN" -t commonmark "$TMP/$1.md" | tr '\n' ' ' | sed 's/ \{1,\}$//' | sed -e 's/&/&amp;/g' -e 's/"/&quot;/g' -e "s/'/&#39;/g" -e 's/</&lt;/g' -e 's/>/&gt;/g'; }
 raw(){ cat "$TMP/$1.md"; }
 
