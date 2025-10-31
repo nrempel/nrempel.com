@@ -31,8 +31,6 @@ Recent chapters
 - **BC Corporate Registry:** Shipped the province’s first verifiable credentials launch so filings could be trusted end to end.
 - **Servmetrics:** Co-founded the platform and built the live sentiment pipeline that surfaced customer feedback in real time.
 
-## story-footnote
-current role
 
 ## focus-title
 What keeps me curious
