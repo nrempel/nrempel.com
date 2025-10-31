@@ -7,7 +7,9 @@
     <meta name="description" content="Senior Shopify software engineer focused on performant Rust systems, product-minded leadership, and emerging AI tooling that connects code to customers.">
     <meta name="author" content="Nicholas Rempel">
     <meta name="theme-color" content="#0b1727">
+    <meta name="generator" content="Tiny static site generator">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="images/headshot.webp" as="image" type="image/webp">
     <link rel="canonical" href="https://nrempel.com/">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
     <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png">
@@ -18,12 +20,18 @@
     <meta property="og:title" content="Nicholas Rempel · Building Scalable Products with Care">
     <meta property="og:description" content="Senior Shopify software engineer focused on performant Rust systems, product-minded leadership, and emerging AI tooling that connects code to customers.">
     <meta property="og:image" content="https://nrempel.com/images/og-card.jpg">
+    <meta property="og:image:secure_url" content="https://nrempel.com/images/og-card.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Nicholas Rempel — Software engineer, human.">
     <meta property="og:site_name" content="nrempel.com">
     <meta property="og:locale" content="en_US">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Nicholas Rempel · Building Scalable Products with Care">
     <meta name="twitter:description" content="Senior Shopify software engineer focused on performant Rust systems, product-minded leadership, and emerging AI tooling that connects code to customers.">
     <meta name="twitter:image" content="https://nrempel.com/images/og-card.jpg">
+    <meta name="twitter:image:alt" content="Nicholas Rempel — Software engineer, human.">
     <meta name="twitter:site" content="@nbrempel">
     <meta name="twitter:creator" content="@nbrempel">
     <link rel="stylesheet" href="styles.css">
@@ -34,7 +42,11 @@
         "name": "Nicholas Rempel",
         "jobTitle": "Senior Software Engineer",
         "url": "https://nrempel.com/",
-        "image": "https://nrempel.com/images/headshot.jpg",
+        "image": [
+          "https://nrempel.com/images/headshot.jpg",
+          "https://nrempel.com/images/headshot.webp",
+          "https://nrempel.com/images/og-card.jpg"
+        ],
         "description": "Senior Shopify software engineer focused on performant Rust systems, product-minded leadership, and emerging AI tooling that connects code to customers.",
         "worksFor": {
           "@type": "Organization",
@@ -47,6 +59,16 @@
           "https://linkedin.com/in/nbrempel",
           "https://bsky.app/profile/nrempel.com",
           "https://www.threads.com/@bigremp"
+        ],
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "contactType": "business",
+            "email": "nbrempel@gmail.com",
+            "availableLanguage": [
+              "en"
+            ]
+          }
         ]
       }
     </script>
@@ -77,7 +99,10 @@
           </div>
         </div>
         <figure class="hero-portrait">
-          <img src="images/headshot.jpg" alt="Illustrated portrait of Nicholas Rempel">
+          <picture>
+            <source srcset="images/headshot.webp" type="image/webp">
+            <img src="images/headshot.jpg" alt="Illustrated portrait of Nicholas Rempel" width="400" height="400" decoding="async">
+          </picture>
         </figure>
       </section>
 
