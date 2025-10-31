@@ -5,7 +5,6 @@
 Senior engineer designing resilient commerce platforms at [Shopify](https://shopify.com).
 
 ## hero
-
 I'm a software developer, optimist, engineering leader, and general technologist. I believe computing and software, and society in general, is currently undergoing one of the most exciting periods ever. Machine learning, LLMs, "AI", or whatever you want to call it is transforming how we use computers.
 
 There are incredible opportunities to take advantage of this new technology and I'm excited to explore what they are.
@@ -29,7 +28,7 @@ Recent chapters
 ## story-milestones
 - **Now - Shopify:** Senior engineer shaping resilient commerce infrastructure for merchants.
 - **Strobe:** Led the engineering team that launched the creator collaboration platform called Strobe.
-- **BC Corporate Registry:** Shipped the province’s first verifiable credentials launch so filings could be trusted end-to-end.
+- **BC Corporate Registry:** Shipped the province’s first verifiable credentials launch so filings could be trusted end to end.
 - **Servmetrics:** Co-founded the platform and built the live sentiment pipeline that surfaced customer feedback in real time.
 
 ## focus-title
@@ -40,17 +39,16 @@ A few themes show up in most of my work, whether I’m pairing with a teammate, 
 
 ## focus
 ### Scalable products
-
-My approach is pragmatic: start with something that works, then evolve it under pressure. I’m interested in the invisible glue that holds systems together—queues that keep data moving, caches that smooth over latency, and APIs that stay solid under load. The challenge is always the same: build for scale without over-engineering for ghosts.
+My approach is pragmatic: start with something that works, then evolve it under pressure. I’m interested in the invisible glue that holds systems together, queues that keep data moving, caches that smooth over latency, and APIs that stay solid under load. The challenge is always the same: build for scale without over engineering for ghosts.
 
 Good infrastructure should fade into the background. When it does its job, the product feels fast, predictable, and quietly powerful. That’s what I aim for.
 
 ### Performance-minded Rust
-Rust keeps me disciplined. It enforces clarity—ownership, lifetimes, and immutability are design choices, not just compiler constraints. I reach for it when performance, predictability, and correctness matter more than iteration speed.
+Rust keeps me disciplined. It enforces clarity: ownership, lifetimes, and immutability are design choices, not just compiler constraints. I reach for it when performance, predictability, and correctness matter more than iteration speed.
 
-Rayon and structured parallelism make it straightforward to scale workloads safely. Profiling, tracing, and property-based testing keep assumptions honest and feedback tight. Over time, I’ve learned that performance isn’t about clever tricks—it’s about removing uncertainty and trusting measurement.
+Rayon and structured parallelism make it straightforward to scale workloads safely. Profiling, tracing, and property-based testing keep assumptions honest and feedback tight. Over time, I’ve learned that performance isn’t about clever tricks, it’s about removing uncertainty and trusting measurement.
 
-Good Rust code should be straightforward to read and dependable in production—clear intent, stable behavior, minimal magic.
+Good Rust code should be straightforward to read and dependable in production: clear intent, stable behavior, minimal magic.
 
 ### Tools for teams
 The most meaningful leverage comes from helping teams move in rhythm. I care about the boring parts that make this possible: clean CI pipelines, fast feedback, well-tuned linters, and docs that people actually read.
@@ -65,4 +63,4 @@ Let’s collaborate
 ## contact-intro
 Have an idea brewing, a platform that needs to scale, or a team that could use a steady hand? I’m always happy to connect.
 
-Lately I’ve been prototyping small developer tools that make everyday workflows faster—little utilities that remove friction instead of adding features.
+Lately I’ve been prototyping small developer tools that make everyday workflows faster, little utilities that remove friction instead of adding features.
