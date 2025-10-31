@@ -2,7 +2,7 @@
 # Hi, I’m Nick Rempel.
 
 ## hero-tagline
-Senior engineer designing resilient commerce platforms at [Shopify](https://shopify.com).
+ Senior engineer designing resilient systems at [Shopify](https://shopify.com).
 
 ## hero
 I'm a software developer, optimist, engineering leader, and general technologist. I believe computing and software, and society in general, is currently undergoing one of the most exciting periods ever. Machine learning, LLMs, "AI", or whatever you want to call it is transforming how we use computers.
