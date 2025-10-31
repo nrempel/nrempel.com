@@ -239,6 +239,10 @@ a:focus-visible {
   background-image: url("images/icon-bcgov.png");
 }
 
+.story-milestones li:nth-child(4)::before {
+  background-image: url("images/icon-servmetrics.png");
+}
+
 .story-milestones strong {
   color: var(--text-main);
   font-weight: 600;
