@@ -2,7 +2,7 @@
 # Hi, I’m Nick Rempel.
 
 ## hero-tagline
- Senior engineer designing resilient systems at [Shopify](https://shopify.com).
+ Software engineer designing resilient systems at [Shopify](https://shopify.com).
 
 ## hero
 I'm a software developer, optimist, engineering leader, and general technologist. I believe computing and software, and society in general, is currently undergoing one of the most exciting periods ever. Machine learning, LLMs, "AI", or whatever you want to call it is transforming how we use computers.
@@ -34,7 +34,7 @@ Outside work you’ll usually find me hanging out with my five-year-old son, tin
 Recent chapters
 
 ## story-milestones
-- **Shopify (current):** Senior engineer shaping resilient commerce infrastructure for merchants.
+- **Shopify (current):** Software engineer shaping resilient commerce infrastructure for merchants.
 - **Strobe:** Led the engineering team that launched the creator collaboration platform called Strobe.
 - **BC Corporate Registry:** Shipped the province’s first verifiable credentials launch so filings could be trusted end to end.
 - **Servmetrics:** Co-founded the platform and built the live sentiment pipeline that surfaced customer feedback in real time.
