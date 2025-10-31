@@ -19,7 +19,12 @@ awk -v dir="$TMP" 'BEGIN{section=""}/^## /{section=substr($0,4);gsub(/\r/,"",sec
 
 slugify(){ printf '%s' "$1" | tr '[:upper:]' '[:lower:]' | sed -E 's/[^a-z0-9]+/-/g;s/^-|-$//g'; }
 render(){ "$CMARK_BIN" "$TMP/$1.md"; }
-lede(){ render "$1" | sed '0,/<p>/s//<p class="section-lede">/'; }
+lede(){
+  render "$1" | awk 'BEGIN{done=0} {
+    if(!done && sub("<p>","<p class=\"section-lede\">")) { done=1; }
+    print
+  }'
+}
 plain(){ "$CMARK_BIN" -t commonmark "$TMP/$1.md" | tr '\n' ' ' | sed 's/ \{1,\}$//' | sed -e 's/&/&amp;/g' -e 's/"/&quot;/g' -e "s/'/&#39;/g" -e 's/</&lt;/g' -e 's/>/&gt;/g'; }
 raw(){ cat "$TMP/$1.md"; }
 
