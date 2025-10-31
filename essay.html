@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{plain:title}} · Nicholas Rempel</title>
+    <meta name="description" content="{{plain:abstract}}">
+    <meta name="author" content="{{plain:author}}">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{{plain:title}}">
+    <meta property="og:description" content="{{plain:abstract}}">
+    <meta property="og:site_name" content="nrempel.com">
+    <meta property="article:author" content="Nicholas Rempel">
+    <meta property="article:published_time" content="{{plain:published-iso}}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{plain:title}}">
+    <meta name="twitter:description" content="{{plain:abstract}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" sizes="any" href="favicon.ico">
+    <link rel="stylesheet" href="essay.css">
+    <script src="essay.js" defer></script>
+  </head>
+  <body>
+    <div class="page">
+      <main class="paper">
+        <article class="manuscript" itemscope itemtype="https://schema.org/Article">
+          <header class="paper-header">
+            <h1 itemprop="headline">{{plain:title}}</h1>
+            <p class="paper-subtitle">{{plain:subtitle}}</p>
+            <div class="paper-meta">
+              <dl>
+                <dt>Author</dt>
+                <dd itemprop="author" itemscope itemtype="https://schema.org/Person">
+                  <span itemprop="name">{{plain:author}}</span>
+                </dd>
+              </dl>
+              <dl>
+                <dt>Published</dt>
+                <dd>
+                  <time itemprop="datePublished" datetime="{{plain:published-iso}}">
+                    {{plain:published}}
+                  </time>
+                </dd>
+              </dl>
+              <dl>
+                <dt>Reading time</dt>
+                <dd>{{plain:reading-time}}</dd>
+              </dl>
+            </div>
+          </header>
+
+          <div class="paper-body" itemprop="articleBody">
+            {{render:body}}
+          </div>
+
+          <footer class="paper-footnotes">
+            {{render:notes}}
+          </footer>
+        </article>
+      </main>
+
+      <footer class="site-footer">
+        <span class="footer-note">© {{plain:published-year}} Nicholas Rempel</span>
+        <a class="return-link" href="/">Return home</a>
+      </footer>
+    </div>
+  </body>
+</html>
