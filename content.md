@@ -63,4 +63,5 @@ Let’s collaborate
 ## contact-intro
 Have an idea brewing, a platform that needs to scale, or a team that could use a steady hand? I’m always happy to connect.
 
+## contact-body
 Lately I’ve been prototyping small developer tools that make everyday workflows faster, little utilities that remove friction instead of adding features.
