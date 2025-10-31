@@ -145,13 +145,13 @@ a:focus-visible {
 
 
 .section-lede {
-  color: rgba(203, 213, 225, 0.85);
+  color: rgba(203, 213, 225, 0.82);
   max-width: 70ch;
   margin: 0;
   font-style: italic;
-  font-size: 0.96rem;
-  line-height: 1.6;
-  text-align: center;
+  font-size: 0.94rem;
+  line-height: 1.65;
+  text-align: left;
 }
 
 .section-lede + .section-lede {
