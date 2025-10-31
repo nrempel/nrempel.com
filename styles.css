@@ -145,16 +145,12 @@ a:focus-visible {
 
 
 .section-lede {
-  color: rgba(203, 213, 225, 0.82);
-  max-width: 46ch;
-  margin: 0 auto;
-  text-align: center;
+  color: rgba(203, 213, 225, 0.85);
+  max-width: 60ch;
+  margin: 0;
   font-style: italic;
-  font-size: clamp(0.96rem, 0.9rem + 0.25vw, 1.1rem);
-  line-height: 1.65;
-  letter-spacing: 0.012em;
-  padding: 1.1rem 0 1rem;
-  background: radial-gradient(circle at 50% 0, rgba(59, 130, 246, 0.12), transparent 65%);
+  font-size: 1rem;
+  line-height: 1.7;
 }
 
 .section-lede + .section-lede {
