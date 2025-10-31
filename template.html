@@ -6,7 +6,7 @@
     <title>Nicholas Rempel · Building Scalable Products with Care</title>
     <meta name="description" content="Software engineer focused on performant Rust systems, product-minded leadership, and emerging AI tooling that connects code to customers.">
     <meta name="author" content="Nicholas Rempel">
-    <meta name="theme-color" content="#0b1727">
+    <meta name="theme-color" content="#ffffff">
     <meta name="generator" content="Tiny static site generator">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" href="images/headshot.webp" as="image" type="image/webp">
@@ -83,6 +83,8 @@
           <div class="hero-meta">
             <a href="#about">Read the story</a>
             <span aria-hidden="true">·</span>
+            <a href="#writing">Browse writing</a>
+            <span aria-hidden="true">·</span>
             <a href="#contact">Drop a line</a>
           </div>
         </div>
@@ -122,6 +124,17 @@
         </div>
       </section>
 
+      <section class="section" id="writing">
+        <div class="wrap">
+          <header>
+            <h2 class="section-title">{{plain:essays-title}}</h2>
+          </header>
+          <div class="essay-list">
+            {{render:essays}}
+          </div>
+        </div>
+      </section>
+
       <section class="section" id="contact">
         <div class="wrap">
           <header>
@@ -147,7 +160,7 @@
     </main>
 
     <footer>
-      <div class="wrap footer-wrap">
+      <div class="wrap site-footer">
         <p class="footer-note">&copy; 2025 Nicholas Rempel. Built with <a href="https://github.com/nrempel/tiny">Tiny</a> and deployed on <a href="https://www.cloudflare.com">Cloudflare</a>.</p>
       </div>
     </footer>

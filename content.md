@@ -9,6 +9,14 @@ I'm a software developer, optimist, engineering leader, and general technologist
 
 There are incredible opportunities to take advantage of this new technology and I'm excited to explore what they are.
 
+## essays-title
+Writing
+
+## essays
+- **[Smaller Surfaces](smaller-surfaces.html)**
+
+  Why agent-generated helpers let you ship leaner stacks without slowing down.
+
 ## story-title
 The story so far
 
