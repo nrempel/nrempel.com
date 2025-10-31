@@ -74,17 +74,6 @@
     </script>
   </head>
   <body>
-    <header class="site-header">
-      <div class="wrap">
-        <span class="brand"><a href="#top">Nicholas Rempel</a></span>
-        <nav class="site-nav">
-          <a href="#about">About</a>
-          <a href="#focus">Focus</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </div>
-    </header>
-
     <main>
       <section class="wrap hero" id="top">
         <div class="hero-text">
@@ -137,8 +126,10 @@
         <div class="wrap">
           <header>
             <h2 id="contact-heading" class="section-title">{{plain:contact-title}}</h2>
-            {{lede:contact-intro}}
           </header>
+          <div class="contact-text">
+            {{render:contact-intro}}
+          </div>
           <div class="contact-links">
             <h3>Elsewhere</h3>
             <ul>
