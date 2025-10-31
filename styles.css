@@ -220,10 +220,23 @@ a:focus-visible {
   width: 1.2rem;
   height: 1.2rem;
   background-image: url("images/favicon-32.png");
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   border-radius: 50%;
   filter: drop-shadow(0 4px 8px rgba(7, 20, 40, 0.5));
+}
+
+.story-milestones li:nth-child(1)::before {
+  background-image: url("images/icon-shopify.png");
+}
+
+.story-milestones li:nth-child(2)::before {
+  background-image: url("images/icon-strobe.png");
+}
+
+.story-milestones li:nth-child(3)::before {
+  background-image: url("images/icon-bcgov.png");
 }
 
 .story-milestones strong {
