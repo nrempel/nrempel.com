@@ -144,9 +144,19 @@ a:focus-visible {
 }
 
 .section-lede {
-  color: var(--text-soft);
-  max-width: 52ch;
-  margin: 0;
+  color: rgba(203, 213, 225, 0.9);
+  max-width: 48ch;
+  margin: 0 auto;
+  text-align: center;
+  font-style: italic;
+  font-size: clamp(1rem, 0.9rem + 0.4vw, 1.2rem);
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+  padding: 1.6rem 0 1.4rem;
+  border-top: 1px solid rgba(148, 163, 184, 0.22);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+  background: linear-gradient(180deg, rgba(30, 64, 175, 0.08), rgba(15, 23, 42, 0));
+  border-radius: 999px;
 }
 
 .section-lede + .section-lede {
