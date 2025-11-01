@@ -1,177 +1,251 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Nicholas Rempel · Building Scalable Products with Care</title>
-    <meta name="description" content="Software engineer focused on performant Rust systems, product-minded leadership, and emerging AI tooling that connects code to customers.">
-    <meta name="author" content="Nicholas Rempel">
-    <meta name="theme-color" content="#ffffff">
-    <meta name="generator" content="Tiny static site generator">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="images/headshot.webp" as="image" type="image/webp">
-    <link rel="canonical" href="https://nrempel.com/">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/x-icon" sizes="any" href="favicon.ico">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://nrempel.com/">
-    <meta property="og:title" content="Nicholas Rempel · Building Scalable Products with Care">
-    <meta property="og:description" content="Software engineer focused on performant Rust systems, product-minded leadership, and emerging AI tooling that connects code to customers.">
-    <meta property="og:image" content="https://nrempel.com/images/og-card.jpg">
-    <meta property="og:image:secure_url" content="https://nrempel.com/images/og-card.jpg">
-    <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Nicholas Rempel — Software engineer, human.">
-    <meta property="og:site_name" content="nrempel.com">
-    <meta property="og:locale" content="en_US">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Nicholas Rempel · Building Scalable Products with Care">
-    <meta name="twitter:description" content="Software engineer focused on performant Rust systems, product-minded leadership, and emerging AI tooling that connects code to customers.">
-    <meta name="twitter:image" content="https://nrempel.com/images/og-card.jpg">
-    <meta name="twitter:image:alt" content="Nicholas Rempel — Software engineer, human.">
-    <meta name="twitter:site" content="@nbrempel">
-    <meta name="twitter:creator" content="@nbrempel">
-    <link rel="stylesheet" href="styles.css">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YWXGKMYBB6"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Nicholas Rempel</title>
+        <meta
+            name="description"
+            content="Software engineer focused on performant Rust systems, product-minded leadership, and emerging AI tooling that connects code to customers."
+        />
+        <meta name="author" content="Nicholas Rempel" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="generator" content="Tiny static site generator" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="preload"
+            href="images/headshot.webp"
+            as="image"
+            type="image/webp"
+        />
+        <link rel="canonical" href="https://nrempel.com/" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="images/favicon-32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="images/favicon-192.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="images/apple-touch-icon.png"
+        />
+        <link rel="icon" type="image/x-icon" sizes="any" href="favicon.ico" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://nrempel.com/" />
+        <meta property="og:title" content="Nicholas Rempel" />
+        <meta
+            property="og:description"
+            content="Software engineer focused on performant Rust systems, product-minded leadership, and emerging AI tooling that connects code to customers."
+        />
+        <meta
+            property="og:image"
+            content="https://nrempel.com/images/og-card.jpg"
+        />
+        <meta
+            property="og:image:secure_url"
+            content="https://nrempel.com/images/og-card.jpg"
+        />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta
+            property="og:image:alt"
+            content="Nicholas Rempel — Software engineer, human."
+        />
+        <meta property="og:site_name" content="nrempel.com" />
+        <meta property="og:locale" content="en_US" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Nicholas Rempel" />
+        <meta
+            name="twitter:description"
+            content="Software engineer focused on performant Rust systems, product-minded leadership, and emerging AI tooling that connects code to customers."
+        />
+        <meta
+            name="twitter:image"
+            content="https://nrempel.com/images/og-card.jpg"
+        />
+        <meta
+            name="twitter:image:alt"
+            content="Nicholas Rempel — Software engineer, human."
+        />
+        <meta name="twitter:site" content="@nbrempel" />
+        <meta name="twitter:creator" content="@nbrempel" />
+        <link rel="stylesheet" href="styles.css" />
+        <!-- Google tag (gtag.js) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-YWXGKMYBB6"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
 
-      gtag('config', 'G-YWXGKMYBB6');
-    </script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Nicholas Rempel",
-        "jobTitle": "Software Engineer",
-        "url": "https://nrempel.com/",
-        "image": [
-          "https://nrempel.com/images/headshot.jpg",
-          "https://nrempel.com/images/headshot.webp",
-          "https://nrempel.com/images/og-card.jpg"
-        ],
-        "description": "Software engineer focused on performant Rust systems, product-minded leadership, and emerging AI tooling that connects code to customers.",
-        "worksFor": {
-          "@type": "Organization",
-          "name": "Shopify"
-        },
-        "sameAs": [
-          "mailto:nbrempel@gmail.com",
-          "https://github.com/nrempel",
-          "https://x.com/nbrempel",
-          "https://linkedin.com/in/nbrempel",
-          "https://bsky.app/profile/nrempel.com",
-          "https://www.threads.com/@bigremp"
-        ],
-        "contactPoint": [
-          {
-            "@type": "ContactPoint",
-            "contactType": "business",
-            "email": "nbrempel@gmail.com",
-            "availableLanguage": [
-              "en"
-            ]
-          }
-        ]
-      }
-    </script>
-  </head>
-  <body>
-    <main>
-      <section class="wrap hero" id="top">
-        <div class="hero-text">
-          {{render:hero-title}}
-          {{lede:hero-tagline}}
-          {{render:hero}}
-          <div class="hero-meta">
-            <a href="#about">My story</a>
-            <span aria-hidden="true">·</span>
-            <a href="#writing">Writing</a>
-            <span aria-hidden="true">·</span>
-            <a href="#contact">Drop a line</a>
-          </div>
-        </div>
-        <figure class="hero-portrait">
-          <picture>
-            <source srcset="images/headshot.webp" type="image/webp">
-            <img src="images/headshot.jpg" alt="Illustrated portrait of Nicholas Rempel" width="400" height="400" decoding="async">
-          </picture>
-        </figure>
-      </section>
+            gtag("config", "G-YWXGKMYBB6");
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Nicholas Rempel",
+                "jobTitle": "Software Engineer",
+                "url": "https://nrempel.com/",
+                "image": [
+                    "https://nrempel.com/images/headshot.jpg",
+                    "https://nrempel.com/images/headshot.webp",
+                    "https://nrempel.com/images/og-card.jpg"
+                ],
+                "description": "Software engineer focused on performant Rust systems, product-minded leadership, and emerging AI tooling that connects code to customers.",
+                "worksFor": {
+                    "@type": "Organization",
+                    "name": "Shopify"
+                },
+                "sameAs": [
+                    "mailto:nbrempel@gmail.com",
+                    "https://github.com/nrempel",
+                    "https://x.com/nbrempel",
+                    "https://linkedin.com/in/nbrempel",
+                    "https://bsky.app/profile/nrempel.com",
+                    "https://www.threads.com/@bigremp"
+                ],
+                "contactPoint": [
+                    {
+                        "@type": "ContactPoint",
+                        "contactType": "business",
+                        "email": "nbrempel@gmail.com",
+                        "availableLanguage": ["en"]
+                    }
+                ]
+            }
+        </script>
+    </head>
+    <body>
+        <main>
+            <section class="wrap hero" id="top">
+                <div class="hero-text">
+                    {{render:hero-title}} {{lede:hero-tagline}} {{render:hero}}
+                    <div class="hero-meta">
+                        <a href="#about">My story</a>
+                        <span aria-hidden="true">·</span>
+                        <a href="#writing">Writing</a>
+                        <span aria-hidden="true">·</span>
+                        <a href="#contact">Drop a line</a>
+                    </div>
+                </div>
+                <figure class="hero-portrait">
+                    <picture>
+                        <source
+                            srcset="images/headshot.webp"
+                            type="image/webp"
+                        />
+                        <img
+                            src="images/headshot.jpg"
+                            alt="Illustrated portrait of Nicholas Rempel"
+                            width="400"
+                            height="400"
+                            decoding="async"
+                        />
+                    </picture>
+                </figure>
+            </section>
 
-      <section class="section" id="about">
-        <div class="wrap">
-          <header>
-            <h2 class="section-title">{{plain:story-title}}</h2>
-            {{lede:story-intro}}
-          </header>
-          <div class="story-body">
-            {{render:story}}
-          </div>
-          <div class="story-milestones">
-            <h3>{{plain:story-milestones-title}}</h3>
-            {{render:story-milestones}}
-          </div>
-        </div>
-      </section>
+            <section class="section" id="about">
+                <div class="wrap">
+                    <header>
+                        <h2 class="section-title">{{plain:story-title}}</h2>
+                        {{lede:story-intro}}
+                    </header>
+                    <div class="story-body">{{render:story}}</div>
+                    <div class="story-milestones">
+                        <h3>{{plain:story-milestones-title}}</h3>
+                        {{render:story-milestones}}
+                    </div>
+                </div>
+            </section>
 
-      <section class="section" id="focus">
-        <div class="wrap">
-          <header>
-            <h2 class="section-title">{{plain:focus-title}}</h2>
-            {{lede:focus-intro}}
-          </header>
-          <div class="focus-notes">
-            {{render:focus}}
-          </div>
-        </div>
-      </section>
+            <section class="section" id="focus">
+                <div class="wrap">
+                    <header>
+                        <h2 class="section-title">{{plain:focus-title}}</h2>
+                        {{lede:focus-intro}}
+                    </header>
+                    <div class="focus-notes">{{render:focus}}</div>
+                </div>
+            </section>
 
-      <section class="section" id="writing">
-        <div class="wrap">
-          <header>
-            <h2 class="section-title">{{plain:essays-title}}</h2>
-          </header>
-          <div class="essay-list">
-            {{render:essays}}
-          </div>
-        </div>
-      </section>
+            <section class="section" id="writing">
+                <div class="wrap">
+                    <header>
+                        <h2 class="section-title">{{plain:essays-title}}</h2>
+                    </header>
+                    <div class="essay-list">{{render:essays}}</div>
+                </div>
+            </section>
 
-      <section class="section" id="contact">
-        <div class="wrap">
-          <header>
-            <h2 id="contact-heading" class="section-title">{{plain:contact-title}}</h2>
-            {{lede:contact-intro}}
-          </header>
-          <div class="contact-text">
-            {{render:contact-body}}
-          </div>
-          <div class="contact-links">
-            <h3>Elsewhere</h3>
-            <ul>
-              <li><a href="mailto:nbrempel@gmail.com">Email</a></li>
-              <li><a href="https://github.com/nrempel">GitHub</a></li>
-              <li><a href="https://x.com/nbrempel" aria-label="X (formerly Twitter)">𝕏</a></li>
-              <li><a href="https://linkedin.com/in/nbrempel">LinkedIn</a></li>
-              <li><a href="https://bsky.app/profile/nrempel.com">Bluesky</a></li>
-              <li><a href="https://www.threads.com/@bigremp">Threads</a></li>
-            </ul>
-          </div>
-        </div>
-      </section>
-    </main>
+            <section class="section" id="contact">
+                <div class="wrap">
+                    <header>
+                        <h2 id="contact-heading" class="section-title">
+                            {{plain:contact-title}}
+                        </h2>
+                        {{lede:contact-intro}}
+                    </header>
+                    <div class="contact-text">{{render:contact-body}}</div>
+                    <div class="contact-links">
+                        <h3>Elsewhere</h3>
+                        <ul>
+                            <li>
+                                <a href="mailto:nbrempel@gmail.com">Email</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/nrempel">GitHub</a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://x.com/nbrempel"
+                                    aria-label="X (formerly Twitter)"
+                                    >𝕏</a
+                                >
+                            </li>
+                            <li>
+                                <a href="https://linkedin.com/in/nbrempel"
+                                    >LinkedIn</a
+                                >
+                            </li>
+                            <li>
+                                <a href="https://bsky.app/profile/nrempel.com"
+                                    >Bluesky</a
+                                >
+                            </li>
+                            <li>
+                                <a href="https://www.threads.com/@bigremp"
+                                    >Threads</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-    <footer>
-      <div class="wrap site-footer">
-        <p class="footer-note">&copy; 2025 Nicholas Rempel. Built with <a href="https://github.com/nrempel/tiny">Tiny</a> and deployed on <a href="https://www.cloudflare.com">Cloudflare</a>.</p>
-      </div>
-    </footer>
-  </body>
+        <footer>
+            <div class="wrap site-footer">
+                <p class="footer-note">
+                    &copy; 2025 Nicholas Rempel. Built with
+                    <a href="https://github.com/nrempel/tiny">Tiny</a> and
+                    deployed on
+                    <a href="https://www.cloudflare.com">Cloudflare</a>.
+                </p>
+            </div>
+        </footer>
+    </body>
 </html>
