@@ -21,10 +21,10 @@ Writing
 The story so far
 
 ## story-intro
-Before I got into software, I spent a few years working in group homes supporting people with disabilities. It was quiet, human work that taught me patience, awareness, and how to listen before speaking. That grounding shows up in how I work with teams now, staying calm under pressure, noticing the human signals, and making sure everyone feels heard before we sprint.
+Before I got into software, I spent a few years working in group homes supporting people with disabilities. It was quiet work that taught me patience, awareness, and how to listen before speaking. That grounding shows up in how I work with teams now, staying calm under pressure, noticing the human signals, and making sure everyone feels heard before we sprint.
 
 ## story
-I gravitate toward the messy middle of product development where architecture decisions meet the real needs of the people using the thing. Leading the [Strobe](https://strobe.app) team from idea to launch in just three months taught me how to keep multiple streams of work aligned without losing the craft in the code.
+I gravitate toward the messy middle of product development where architecture decisions meet the real needs of the people using the thing. Leading the [Strobe](https://strobe.app) team from idea to launch in just three months taught me how to keep multiple streams of work aligned without losing sight of the important product outcomes.
 
 Today at Shopify, I design resilient systems that scale as quickly as the businesses on top of them. I’m known for clear communication, hands-on leadership, and for keeping performance budgets in the conversation from day one.
 
@@ -44,16 +44,16 @@ Recent chapters
 What keeps me curious
 
 ## focus-intro
-A few themes show up in most of my work, whether I’m pairing with a teammate, sketching a system, or hacking on a side project after everyone’s asleep.
+I've found myself focusing on a few areas recently.
 
 ## focus
 ### Scalable products
-My approach is pragmatic: start with something that works, then evolve it under pressure. I’m interested in the invisible glue that holds systems together, queues that keep data moving, caches that smooth over latency, and APIs that stay solid under load. The challenge is always the same: build for scale without over engineering for ghosts.
+I like to start with something that works, then evolve it under pressure. I’m interested in the invisible glue that holds systems together, queues that keep data moving, caches that smooth over latency, and APIs that stay solid under load. The challenge is always the same: build for scale without over engineering.
 
 Good infrastructure should fade into the background. When it does its job, the product feels fast, predictable, and quietly powerful. That’s what I aim for.
 
 ### Performance-minded Rust
-Rust keeps me disciplined. It enforces clarity: ownership, lifetimes, and immutability are design choices, not just compiler constraints. I reach for it when performance, predictability, and correctness matter more than iteration speed.
+Rust enforces clarity: ownership, lifetimes, and immutability are design choices, not just compiler constraints. I reach for it when performance, predictability, and correctness matter more than iteration speed.
 
 Rayon and structured parallelism make it straightforward to scale workloads safely. Profiling, tracing, and property-based testing keep assumptions honest and feedback tight. Over time, I’ve learned that performance isn’t about clever tricks, it’s about removing uncertainty and trusting measurement.
 
