@@ -98,6 +98,24 @@ main {
   margin-bottom: 1.8rem;
 }
 
+.hero-meta {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.hero-meta span {
+  color: var(--text-muted);
+}
+
+.hero-meta a {
+  border-bottom: 1px solid transparent;
+  font-weight: 600;
+}
+
 .hero-portrait {
   max-width: 320px;
   margin: 0 0 0 auto;
