@@ -137,10 +137,6 @@ main {
   border-top: 1px solid var(--rule);
 }
 
-.page-not-found main {
-  padding: clamp(4rem, 10vw, 6rem) 0 clamp(3.6rem, 11vw, 5.6rem);
-}
-
 .not-found {
   border-top: none;
 }
@@ -153,7 +149,7 @@ main {
 
 .not-found-content h1 {
   margin: 0;
-  font-size: clamp(2.4rem, 3vw + 1.1rem, 3.2rem);
+  font-size: clamp(2.8rem, 4vw + 1rem, 3.6rem);
   letter-spacing: -0.015em;
 }
 
@@ -398,15 +394,25 @@ footer {
 }
 
 .recommendations-header h1 {
-  margin: 0 0 1.2rem;
-  font-size: clamp(2.2rem, 2.2rem + 1.6vw, 2.8rem);
-  letter-spacing: -0.012em;
+  margin: 0 0 1.4rem;
+  font-size: clamp(2.8rem, 4vw + 1rem, 3.6rem);
+  letter-spacing: -0.015em;
 }
 
 .recommendations-header p {
   margin: 0 0 1rem;
   color: var(--text-secondary);
   max-width: var(--measure);
+}
+
+.recommendations-header p:first-of-type {
+  font-family: var(--font-sans);
+  font-size: clamp(1.1rem, 1rem + 1vw, 1.4rem);
+  letter-spacing: 0.035em;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--text-muted);
+  margin-bottom: 1.8rem;
 }
 
 .recommendations-disclosure {
@@ -488,7 +494,7 @@ footer {
 
 .section--standalone {
   border-top: none;
-  padding-top: clamp(4rem, 7vw, 5.2rem);
+  padding-top: 0;
 }
 
 @media (max-width: 960px) {
