@@ -13,7 +13,7 @@ There are incredible opportunities to take advantage of this new technology and 
 Writing
 
 ## essays
-- **[Smaller Surfaces](smaller-surfaces.html)**
+- **[Smaller Surfaces](smaller-surfaces)**
 
   Why agent-generated helpers let you ship leaner stacks without slowing down.
 

@@ -5,7 +5,7 @@ Smaller Surfaces
 Why agent-generated helpers let you ship leaner stacks without slowing down.
 
 ## canonical
-https://nrempel.com/smaller-surfaces.html
+https://nrempel.com/smaller-surfaces
 
 ## author
 Nicholas Rempel
