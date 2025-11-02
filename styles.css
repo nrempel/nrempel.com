@@ -405,7 +405,6 @@ footer {
 
 .recommendations-header p {
   margin: 0 0 1rem;
-  font-family: var(--font-sans);
   color: var(--text-secondary);
   max-width: var(--measure);
 }
@@ -424,12 +423,9 @@ footer {
   max-width: var(--measure);
 }
 
+
 .recommendation-item {
-  border: 1px solid var(--rule);
-  border-radius: 16px;
-  padding: 1.6rem 1.8rem;
-  background: rgba(248, 249, 252, 0.65);
-  box-shadow: 0 10px 28px -24px rgba(15, 76, 129, 0.35);
+  padding: 0;
 }
 
 .recommendation-item-title {
@@ -454,7 +450,6 @@ footer {
 .recommendation-item-perk {
   margin: 0;
   color: var(--text-secondary);
-  font-family: var(--font-sans);
   line-height: 1.6;
 }
 
@@ -489,7 +484,11 @@ footer {
 .recommendations-note p {
   margin: 0;
   color: var(--text-secondary);
-  font-family: var(--font-sans);
+}
+
+.section--standalone {
+  border-top: none;
+  padding-top: clamp(4rem, 7vw, 5.2rem);
 }
 
 @media (max-width: 960px) {
