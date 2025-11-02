@@ -1,200 +1,281 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Nicholas Rempel · Building Scalable Products with Care</title>
-    <meta name="description" content="Software engineer focused on performant Rust systems, product-minded leadership, and emerging AI tooling that connects code to customers.">
-    <meta name="author" content="Nicholas Rempel">
-    <meta name="theme-color" content="#ffffff">
-    <meta name="generator" content="Tiny static site generator">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="images/headshot.webp" as="image" type="image/webp">
-    <link rel="canonical" href="https://nrempel.com/">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/x-icon" sizes="any" href="favicon.ico">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://nrempel.com/">
-    <meta property="og:title" content="Nicholas Rempel · Building Scalable Products with Care">
-    <meta property="og:description" content="Software engineer focused on performant Rust systems, product-minded leadership, and emerging AI tooling that connects code to customers.">
-    <meta property="og:image" content="https://nrempel.com/images/og-card.jpg">
-    <meta property="og:image:secure_url" content="https://nrempel.com/images/og-card.jpg">
-    <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Nicholas Rempel — Software engineer, human.">
-    <meta property="og:site_name" content="nrempel.com">
-    <meta property="og:locale" content="en_US">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Nicholas Rempel · Building Scalable Products with Care">
-    <meta name="twitter:description" content="Software engineer focused on performant Rust systems, product-minded leadership, and emerging AI tooling that connects code to customers.">
-    <meta name="twitter:image" content="https://nrempel.com/images/og-card.jpg">
-    <meta name="twitter:image:alt" content="Nicholas Rempel — Software engineer, human.">
-    <meta name="twitter:site" content="@nbrempel">
-    <meta name="twitter:creator" content="@nbrempel">
-    <link rel="stylesheet" href="styles.css">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YWXGKMYBB6"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Nicholas Rempel</title>
+        <meta
+            name="description"
+            content="Software engineer focused on performant Rust systems, product-minded leadership, and emerging AI tooling that connects code to customers."
+        />
+        <meta name="author" content="Nicholas Rempel" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="generator" content="Tiny static site generator" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="preload"
+            href="images/headshot.webp"
+            as="image"
+            type="image/webp"
+        />
+        <link rel="canonical" href="https://nrempel.com/" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="images/favicon-32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="images/favicon-192.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="images/apple-touch-icon.png"
+        />
+        <link rel="icon" type="image/x-icon" sizes="any" href="favicon.ico" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://nrempel.com/" />
+        <meta property="og:title" content="Nicholas Rempel" />
+        <meta
+            property="og:description"
+            content="Software engineer focused on performant Rust systems, product-minded leadership, and emerging AI tooling that connects code to customers."
+        />
+        <meta
+            property="og:image"
+            content="https://nrempel.com/images/og-card.jpg"
+        />
+        <meta
+            property="og:image:secure_url"
+            content="https://nrempel.com/images/og-card.jpg"
+        />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta
+            property="og:image:alt"
+            content="Nicholas Rempel — Software engineer, human."
+        />
+        <meta property="og:site_name" content="nrempel.com" />
+        <meta property="og:locale" content="en_US" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Nicholas Rempel" />
+        <meta
+            name="twitter:description"
+            content="Software engineer focused on performant Rust systems, product-minded leadership, and emerging AI tooling that connects code to customers."
+        />
+        <meta
+            name="twitter:image"
+            content="https://nrempel.com/images/og-card.jpg"
+        />
+        <meta
+            name="twitter:image:alt"
+            content="Nicholas Rempel — Software engineer, human."
+        />
+        <meta name="twitter:site" content="@nbrempel" />
+        <meta name="twitter:creator" content="@nbrempel" />
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            rel="alternate"
+            type="application/rss+xml"
+            title="Nicholas Rempel — Writing"
+            href="https://nrempel.com/rss.xml"
+        />
+        <!-- Google tag (gtag.js) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-YWXGKMYBB6"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
 
-      gtag('config', 'G-YWXGKMYBB6');
-    </script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Nicholas Rempel",
-        "jobTitle": "Software Engineer",
-        "url": "https://nrempel.com/",
-        "image": [
-          "https://nrempel.com/images/headshot.jpg",
-          "https://nrempel.com/images/headshot.webp",
-          "https://nrempel.com/images/og-card.jpg"
-        ],
-        "description": "Software engineer focused on performant Rust systems, product-minded leadership, and emerging AI tooling that connects code to customers.",
-        "worksFor": {
-          "@type": "Organization",
-          "name": "Shopify"
-        },
-        "sameAs": [
-          "mailto:nbrempel@gmail.com",
-          "https://github.com/nrempel",
-          "https://x.com/nbrempel",
-          "https://linkedin.com/in/nbrempel",
-          "https://bsky.app/profile/nrempel.com",
-          "https://www.threads.com/@bigremp"
-        ],
-        "contactPoint": [
-          {
-            "@type": "ContactPoint",
-            "contactType": "business",
-            "email": "nbrempel@gmail.com",
-            "availableLanguage": [
-              "en"
-            ]
-          }
-        ]
-      }
-    </script>
-  </head>
-  <body>
-    <main>
-      <section class="wrap hero" id="top">
-        <div class="hero-text">
-          <h1>Hi, I’m Nick Rempel.</h1>
-          <p>Software engineer designing resilient systems at <a href="https://shopify.com">Shopify</a>.</p>
-          <p>I'm a software developer, optimist, engineering leader, and general technologist. I believe computing and software, and society in general, is currently undergoing one of the most exciting periods ever. Machine learning, LLMs, &quot;AI&quot;, or whatever you want to call it is transforming how we use computers.</p>
+            gtag("config", "G-YWXGKMYBB6");
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Nicholas Rempel",
+                "jobTitle": "Software Engineer",
+                "url": "https://nrempel.com/",
+                "image": [
+                    "https://nrempel.com/images/headshot.jpg",
+                    "https://nrempel.com/images/headshot.webp",
+                    "https://nrempel.com/images/og-card.jpg"
+                ],
+                "description": "Software engineer focused on performant Rust systems, product-minded leadership, and emerging AI tooling that connects code to customers.",
+                "worksFor": {
+                    "@type": "Organization",
+                    "name": "Shopify"
+                },
+                "sameAs": [
+                    "mailto:nbrempel@gmail.com",
+                    "https://github.com/nrempel",
+                    "https://x.com/nbrempel",
+                    "https://linkedin.com/in/nbrempel",
+                    "https://bsky.app/profile/nrempel.com",
+                    "https://www.threads.com/@bigremp"
+                ],
+                "contactPoint": [
+                    {
+                        "@type": "ContactPoint",
+                        "contactType": "business",
+                        "email": "nbrempel@gmail.com",
+                        "availableLanguage": ["en"]
+                    }
+                ]
+            }
+        </script>
+    </head>
+    <body>
+        <main>
+            <section class="wrap hero" id="top">
+                <div class="hero-text">
+                    <h1>Hi, I’m Nick Rempel.</h1> <p>Software engineer designing resilient systems at <a href="https://shopify.com">Shopify</a>.</p> <p>I'm a software developer, optimist, engineering leader, and general technologist. I believe computing and software, and society in general, is currently undergoing one of the most exciting periods ever. Machine learning, LLMs, &quot;AI&quot;, or whatever you want to call it is transforming how we use computers.</p>
 <p>There are incredible opportunities to take advantage of this new technology and I'm excited to explore what they are.</p>
-          <div class="hero-meta">
-            <a href="#about">My story</a>
-            <span aria-hidden="true">·</span>
-            <a href="#writing">Writing</a>
-            <span aria-hidden="true">·</span>
-            <a href="#contact">Drop a line</a>
-          </div>
-        </div>
-        <figure class="hero-portrait">
-          <picture>
-            <source srcset="images/headshot.webp" type="image/webp">
-            <img src="images/headshot.jpg" alt="Illustrated portrait of Nicholas Rempel" width="400" height="400" decoding="async">
-          </picture>
-        </figure>
-      </section>
+                    <div class="hero-meta">
+                        <a href="#about">My story</a>
+                        <span aria-hidden="true">·</span>
+                        <a href="#writing">Writing</a>
+                        <span aria-hidden="true">·</span>
+                        <a href="#contact">Drop a line</a>
+                    </div>
+                </div>
+                <figure class="hero-portrait">
+                    <picture>
+                        <source
+                            srcset="images/headshot.webp"
+                            type="image/webp"
+                        />
+                        <img
+                            src="images/headshot.jpg"
+                            alt="Illustrated portrait of Nicholas Rempel"
+                            width="400"
+                            height="400"
+                            decoding="async"
+                        />
+                    </picture>
+                </figure>
+            </section>
 
-      <section class="section" id="about">
-        <div class="wrap">
-          <header>
-            <h2 class="section-title">The story so far</h2>
-            <p>Before I got into software, I spent a few years working in group homes supporting people with disabilities. It was quiet, human work that taught me patience, awareness, and how to listen before speaking. That grounding shows up in how I work with teams now, staying calm under pressure, noticing the human signals, and making sure everyone feels heard before we sprint.</p>
-          </header>
-          <div class="story-body">
-            <p>I gravitate toward the messy middle of product development where architecture decisions meet the real needs of the people using the thing. Leading the <a href="https://strobe.app">Strobe</a> team from idea to launch in just three months taught me how to keep multiple streams of work aligned without losing the craft in the code.</p>
+            <section class="section" id="about">
+                <div class="wrap">
+                    <header>
+                        <h2 class="section-title">The story so far</h2>
+                        <p>Before I got into software, I spent a few years working in group homes supporting people with disabilities. It was quiet work that taught me patience, awareness, and how to listen before speaking. That grounding shows up in how I work with teams now, staying calm under pressure, noticing the human signals, and making sure everyone feels heard before we sprint.</p>
+                    </header>
+                    <div class="story-body"><p>I gravitate toward the messy middle of product development where architecture decisions meet the real needs of the people using the thing. Leading the <a href="https://strobe.app">Strobe</a> team from idea to launch in just three months taught me how to keep multiple streams of work aligned without losing sight of the important product outcomes.</p>
 <p>Today at Shopify, I design resilient systems that scale as quickly as the businesses on top of them. I’m known for clear communication, hands-on leadership, and for keeping performance budgets in the conversation from day one.</p>
-<p>Outside work you’ll usually find me hanging out with my five-year-old son, tinkering with whatever side project has my attention that week, or clearing dungeons in Diablo IV once the house is quiet.</p>
-          </div>
-          <div class="story-milestones">
-            <h3>Recent chapters</h3>
-            <ul>
+<p>Outside work you’ll usually find me hanging out with my five-year-old son, tinkering with whatever side project has my attention that week, or clearing dungeons in Diablo IV once the house is quiet.</p></div>
+                    <div class="story-milestones">
+                        <h3>Recent chapters</h3>
+                        <ul>
 <li><strong>Shopify (current):</strong> Software engineer shaping resilient commerce infrastructure for merchants.</li>
 <li><strong>Strobe:</strong> Led the engineering team that launched the creator collaboration platform called Strobe.</li>
 <li><strong>BC Corporate Registry:</strong> Shipped the province’s first verifiable credentials launch so filings could be trusted end to end.</li>
 <li><strong>Servmetrics:</strong> Co-founded the platform and built the live sentiment pipeline that surfaced customer feedback in real time.</li>
 </ul>
-          </div>
-        </div>
-      </section>
+                    </div>
+                </div>
+            </section>
 
-      <section class="section" id="focus">
-        <div class="wrap">
-          <header>
-            <h2 class="section-title">What keeps me curious</h2>
-            <p>A few themes show up in most of my work, whether I’m pairing with a teammate, sketching a system, or hacking on a side project after everyone’s asleep.</p>
-          </header>
-          <div class="focus-notes">
-            <h3>Scalable products</h3>
-<p>My approach is pragmatic: start with something that works, then evolve it under pressure. I’m interested in the invisible glue that holds systems together, queues that keep data moving, caches that smooth over latency, and APIs that stay solid under load. The challenge is always the same: build for scale without over engineering for ghosts.</p>
+            <section class="section" id="focus">
+                <div class="wrap">
+                    <header>
+                        <h2 class="section-title">What keeps me curious</h2>
+                        <p>I've found myself focusing on a few areas recently.</p>
+                    </header>
+                    <div class="focus-notes"><h3>Scalable products</h3>
+<p>I like to start with something that works, then evolve it under pressure. I’m interested in the invisible glue that holds systems together, queues that keep data moving, caches that smooth over latency, and APIs that stay solid under load. The challenge is always the same: build for scale without over engineering.</p>
 <p>Good infrastructure should fade into the background. When it does its job, the product feels fast, predictable, and quietly powerful. That’s what I aim for.</p>
 <h3>Performance-minded Rust</h3>
-<p>Rust keeps me disciplined. It enforces clarity: ownership, lifetimes, and immutability are design choices, not just compiler constraints. I reach for it when performance, predictability, and correctness matter more than iteration speed.</p>
+<p>Rust enforces clarity: ownership, lifetimes, and immutability are design choices, not just compiler constraints. I reach for it when performance, predictability, and correctness matter more than iteration speed.</p>
 <p>Rayon and structured parallelism make it straightforward to scale workloads safely. Profiling, tracing, and property-based testing keep assumptions honest and feedback tight. Over time, I’ve learned that performance isn’t about clever tricks, it’s about removing uncertainty and trusting measurement.</p>
 <p>Good Rust code should be straightforward to read and dependable in production: clear intent, stable behavior, minimal magic.</p>
 <h3>Tools for teams</h3>
 <p>The most meaningful leverage comes from helping teams move in rhythm. I care about the boring parts that make this possible: clean CI pipelines, fast feedback, well-tuned linters, and docs that people actually read.</p>
 <p>I’ve been exploring AI-assisted development not as replacement but as augmentation, pairing bots with humans to reduce toil and surface insight faster. When used right, these tools act like good colleagues: attentive, consistent, and unoffended by repetition.</p>
-<p>Ultimately, tools are about communication. Good ones make intent visible, friction low, and progress obvious. They let people focus on the work that actually matters. If you’re experimenting with AI pair flows, I’d love to compare notes.</p>
-          </div>
-        </div>
-      </section>
+<p>Ultimately, tools are about communication. Good ones make intent visible, friction low, and progress obvious. They let people focus on the work that actually matters. If you’re experimenting with AI pair flows, I’d love to compare notes.</p></div>
+                </div>
+            </section>
 
-      <section class="section" id="writing">
-        <div class="wrap">
-          <header>
-            <h2 class="section-title">Writing</h2>
-          </header>
-          <div class="essay-list">
-            <ul>
+            <section class="section" id="writing">
+                <div class="wrap">
+                    <header>
+                        <h2 class="section-title">Writing</h2>
+                    </header>
+                    <div class="essay-list"><ul>
 <li>
 <p><strong><a href="smaller-surfaces.html">Smaller Surfaces</a></strong></p>
 <p>Why agent-generated helpers let you ship leaner stacks without slowing down.</p>
 </li>
-</ul>
-          </div>
-        </div>
-      </section>
+</ul></div>
+                </div>
+            </section>
 
-      <section class="section" id="contact">
-        <div class="wrap">
-          <header>
-            <h2 id="contact-heading" class="section-title">Let’s collaborate</h2>
-            <p>Have an idea brewing, a platform that needs to scale, or a team that could use a steady hand? I’m always happy to connect.</p>
-          </header>
-          <div class="contact-text">
-            <p>Lately I’ve been prototyping small developer tools that make everyday workflows faster, little utilities that remove friction instead of adding features.</p>
-          </div>
-          <div class="contact-links">
-            <h3>Elsewhere</h3>
-            <ul>
-              <li><a href="mailto:nbrempel@gmail.com">Email</a></li>
-              <li><a href="https://github.com/nrempel">GitHub</a></li>
-              <li><a href="https://x.com/nbrempel" aria-label="X (formerly Twitter)">𝕏</a></li>
-              <li><a href="https://linkedin.com/in/nbrempel">LinkedIn</a></li>
-              <li><a href="https://bsky.app/profile/nrempel.com">Bluesky</a></li>
-              <li><a href="https://www.threads.com/@bigremp">Threads</a></li>
-            </ul>
-          </div>
-        </div>
-      </section>
-    </main>
+            <section class="section" id="contact">
+                <div class="wrap">
+                    <header>
+                        <h2 id="contact-heading" class="section-title">
+                            Let’s collaborate
+                        </h2>
+                        <p>Have an idea brewing, a platform that needs to scale, or a team that could use a steady hand? I’m always happy to connect.</p>
+                    </header>
+                    <div class="contact-text"><p>Lately I’ve been prototyping small developer tools that make everyday workflows faster, little utilities that remove friction instead of adding features.</p></div>
+                    <div class="contact-links">
+                        <h3>Elsewhere</h3>
+                        <ul>
+                            <li>
+                                <a href="mailto:nbrempel@gmail.com">Email</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/nrempel">GitHub</a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://x.com/nbrempel"
+                                    aria-label="X (formerly Twitter)"
+                                    >𝕏</a
+                                >
+                            </li>
+                            <li>
+                                <a href="https://linkedin.com/in/nbrempel"
+                                    >LinkedIn</a
+                                >
+                            </li>
+                            <li>
+                                <a href="https://bsky.app/profile/nrempel.com"
+                                    >Bluesky</a
+                                >
+                            </li>
+                            <li>
+                                <a href="https://www.threads.com/@bigremp"
+                                    >Threads</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-    <footer>
-      <div class="wrap site-footer">
-        <p class="footer-note">&copy; 2025 Nicholas Rempel. Built with <a href="https://github.com/nrempel/tiny">Tiny</a> and deployed on <a href="https://www.cloudflare.com">Cloudflare</a>.</p>
-      </div>
-    </footer>
-  </body>
+        <footer>
+            <div class="wrap site-footer">
+                <p class="footer-note">
+                    &copy; 2025 Nicholas Rempel. Built with
+                    <a href="https://github.com/nrempel/tiny">Tiny</a> and
+                    deployed on
+                    <a href="https://www.cloudflare.com">Cloudflare</a>
+                    &middot; <a href="/rss.xml">RSS</a>.
+                </p>
+            </div>
+        </footer>
+    </body>
 </html>
